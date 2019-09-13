@@ -1,0 +1,29 @@
+{
+  "name": "labs16-CrimeStats-BE-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bryce-Soghigian/labs16-CrimeStats-BE-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bryce-Soghigian/labs16-CrimeStats-BE-template/issues"
+  },
+  "homepage": "https://github.com/Bryce-Soghigian/labs16-CrimeStats-BE-template#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.0",
+    "knex": "^0.19.4",
+    "nodemon": "^1.19.2"
+  }
+}
