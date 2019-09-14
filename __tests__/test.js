@@ -47,7 +47,7 @@ describe("HTTP Request Tests", () => {
     it('LOGIN', () => {
       return request(server)
         .post('/api/auth/login')
-        .send({ username:'I had a helluva day!',password:"fafsdasfdas" })
+        .send({ username:'yikes',password:"fafsdasfdas" })
         .then(res => {
             expect(res.type).toMatch(/json/);
           });
