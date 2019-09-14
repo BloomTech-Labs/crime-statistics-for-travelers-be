@@ -19,14 +19,14 @@ To get the server running locally:
 - **yarn server** to start the local server
 - **yarn test** to start server using testing environment
 
-### Backend framework goes here
+### Node/Express/KNEX/Postgres
 
 🚫 Why did you choose this framework?
 
--    Point One
--    Point Two
--    Point Three
--    Point Four
+-    We chose this node stack due to a majority of the team being familiar with the technologies
+-    KNEX is an amazing query builder that allows you to write complex queries in javascript, a language the web team all knows and loves.
+-  We are using Postgres for easy persistent data. -Postgres makes working with relational databases remarkably easy.
+ 
 
 ## 2️⃣ Endpoints
 
