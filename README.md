@@ -6,23 +6,17 @@
 
 # API Documentation
 
-#### 1️⃣ Backend delpoyed at [🚫name service here](🚫add URL here) <br>
+#### 1️⃣ Backend delpoyed at [heroku](🚫add URL here) <br>
 
 ## 1️⃣ Getting started
 
 To get the server running locally:
-
-🚫 adjust these scripts to match your project
-
 - Clone this repo
-- **yarn install** to install all required dependencies
-- **yarn server** to start the local server
-- **yarn test** to start server using testing environment
+- **npm i** to install all required dependencies
+- **nodemon** to start the local server
+- **npm test** to start server using testing environment
 
-### Node/Express/KNEX/Postgres
-
-🚫 Why did you choose this framework?
-
+### Backend Stack-- Node/Express/KNEX/Postgres
 -    We chose this node stack due to a majority of the team being familiar with the technologies
 -    KNEX is an amazing query builder that allows you to write complex queries in javascript, a language the web team all knows and loves.
 -  We are using Postgres for easy persistent data. -Postgres makes working with relational databases remarkably easy.
