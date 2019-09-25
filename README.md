@@ -6,50 +6,41 @@
 
 # API Documentation
 
-#### 1️⃣ Backend delpoyed at [🚫name service here](🚫add URL here) <br>
+#### 1️⃣ Backend delpoyed at [heroku](🚫add URL here) <br>
 
 ## 1️⃣ Getting started
 
 To get the server running locally:
-
-🚫 adjust these scripts to match your project
-
 - Clone this repo
-- **yarn install** to install all required dependencies
-- **yarn server** to start the local server
-- **yarn test** to start server using testing environment
+- **npm i** to install all required dependencies
+- **nodemon** to start the local server
+- **npm test** to start server using testing environment
 
-### Backend framework goes here
-
-🚫 Why did you choose this framework?
-
--    Point One
--    Point Two
--    Point Three
--    Point Four
+### Backend Stack-- Node/Express/KNEX/Postgres
+-    We chose this node stack due to a majority of the team being familiar with the technologies
+-    KNEX is an amazing query builder that allows you to write complex queries in javascript, a language the web team all knows and loves.
+-  We are using Postgres for easy persistent data. -Postgres makes working with relational databases remarkably easy.
+ 
 
 ## 2️⃣ Endpoints
 
 🚫This is a placeholder, replace the endpoints, access controll, and descriptioin to match your project
 
-#### Organization Routes
+#### Authentication Routes
 
 | Method | Endpoint                | Access Control | Description                                  |
 | ------ | ----------------------- | -------------- | -------------------------------------------- |
-| GET    | `/organizations/:orgId` | all users      | Returns the information for an organization. |
-| PUT    | `/organizatoins/:orgId` | owners         | Modify an existing organization.             |
-| DELETE | `/organizations/:orgId` | owners         | Delete an organization.                      |
+| POST    | `/api/auth/register` | All Users     | Registers a new User to the database|
+| POST  | `/api/auth/login` | All Users       | Generates a token for a registered user           |
+
 
 #### User Routes
 
 | Method | Endpoint                | Access Control      | Description                                        |
 | ------ | ----------------------- | ------------------- | -------------------------------------------------- |
-| GET    | `/users/current`        | all users           | Returns info for the logged in user.               |
-| GET    | `/users/org/:userId`    | owners, supervisors | Returns all users for an organization.             |
-| GET    | `/users/:userId`        | owners, supervisors | Returns info for a single user.                    |
-| POST   | `/users/register/owner` | none                | Creates a new user as owner of a new organization. |
-| PUT    | `/users/:userId`        | owners, supervisors |                                                    |
-| DELETE | `/users/:userId`        | owners, supervisors |                                                    |
+| GET    | `/api/users/`        | all users           | Returns all the users that exist             |
+| DELETE    | `/api/users/:id`    | All Users| deletes a user from an organization.             |
+| PUT    | `/api/users/:id`        | All Users | Updates info for a single user.                    |
 
 # Data Model
 
